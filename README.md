@@ -4,8 +4,18 @@ Incremental lessons learning C++.
 
 ## Prerequisites
 
-- A C++ compiler (`c++ --version` or `g++ --version`)
+- A C++ compiler (Clang++ or g++)
 - `make`
+
+### Install
+
+- macOS: `xcode-select --install` (installs Apple Clang++ + make)
+- Debian / Ubuntu: `sudo apt install build-essential` (installs g++ + make)
+- Fedora: `sudo dnf groupinstall "Development Tools"`
+
+### Verify
+
+    c++ --version && make --version
 
 ## Lessons
 
