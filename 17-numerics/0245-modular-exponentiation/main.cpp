@@ -1,0 +1,17 @@
+#include <iostream>
+
+long long modpow(long long base, long long exp, long long mod) {
+    long long result = 1;
+    base %= mod;
+    while (exp > 0) {
+        if (exp & 1) result = result * base % mod;
+        base = base * base % mod;
+        exp >>= 1;
+    }
+    return result;
+}
+
+int main() {
+    std::cout << modpow(3, 13, 7) << '\n';
+    return 0;
+}
