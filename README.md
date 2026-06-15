@@ -519,6 +519,9 @@ Incremental lessons learning C++.
 - [0467-field-rename](29-serialization/0467-field-rename/) — map a code field name to a different JSON key
 - [0468-scalar-types](29-serialization/0468-scalar-types/) — serialize bool, int, and string fields
 
+### Numeric & Arrays
+- [0553-vector-sum](40-numeric-arrays/0553-vector-sum/) — sum the elements of a vector
+
 ## How to run
 
 Lessons are grouped into topic folders (e.g. `05-strings/0072-palindrome-check/`).
