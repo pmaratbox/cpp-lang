@@ -1,0 +1,11 @@
+#include <sqlite3.h>
+#include <iostream>
+int main(){
+  sqlite3 *db; sqlite3_open(":memory:", &db);
+  sqlite3_stmt *q; sqlite3_prepare_v2(db,"select 42",-1,&q,0);
+  while(sqlite3_step(q)==SQLITE_ROW)
+    std::cout << sqlite3_column_int(q,0) << "\n";
+  sqlite3_finalize(q);
+  sqlite3_close(db);
+  return 0;
+}
